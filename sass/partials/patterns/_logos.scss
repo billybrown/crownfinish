@@ -1,0 +1,14 @@
+// logos
+
+.logo-bg {
+	display: inline-block;
+	vertical-align: middle;
+	text-indent: -999em;
+	overflow: hidden;
+
+	&.crownfinish {
+		background: transparent url("../img/crownfinishcaves-logo.png") no-repeat;
+		width: 300px;
+		height: 185px;
+	}	
+}

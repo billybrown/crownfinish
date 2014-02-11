@@ -1,0 +1,31 @@
+
+table {
+	border: none;
+	border-top: 1px solid $web-grey;
+	width: 100%;
+}
+
+thead {
+	background: $web-black;
+	color: white;
+	border-right: 1px solid $web-black;
+	border-left: 1px solid $web-black;
+	border-top: 1px solid $web-black;
+}
+
+tbody {
+	border-left: 1px solid $web-grey;
+}
+
+th,
+td {
+	padding: .4em .5em;
+}
+
+th {
+	border: none;
+}
+td {
+	border-right: 1px solid $web-grey;
+	border-bottom: 1px solid $web-grey;
+}

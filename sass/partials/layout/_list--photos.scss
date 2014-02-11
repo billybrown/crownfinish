@@ -1,0 +1,61 @@
+// photo list
+
+$slides_amount: 11;
+$slides_width: 650px;
+$slides_height: 550px;
+$slider_width: $slides_width * $slides_amount;
+.slider {
+
+	.photos-container {
+		width: 100%;
+		text-align: center;
+		@include respond($bp-medium) {
+			width: $slider_width;
+			margin: 0;
+			top: 0;
+			left: 0;
+			height: $slides_height;
+			position: relative;
+			overflow: hidden;
+			@include transition(margin-left .2s linear);
+		}
+
+		.photos {
+		}
+		li {
+			@include respond($bp-medium) {
+				float: left;
+			}
+		}
+	}
+
+	.gear {
+		display: none;
+		@include respond($bp-medium) {
+			display: block;
+			background: $red;
+			padding: 1em;
+			color: white;
+			font-weight: 600;
+	
+			&:hover {
+				background: $blue;
+				cursor: pointer;
+			}
+	
+			&.next {
+				float: right;
+			}
+			&.prev {
+				float: left;
+			}
+			&.greyed {
+				background: $web-grey-dark;
+				&:hover {
+					background: $web-grey-dark;
+				}
+			}
+		}
+	}
+}
+

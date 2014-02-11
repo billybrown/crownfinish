@@ -1,0 +1,163 @@
+body {
+	font-family: $base-font-family;
+	color: $text-color;
+}
+
+p, li {
+	font-size: $font-size;
+	line-height: $line-height;
+	@include respond($bp-medium) {
+		font-size: 2em;
+	}
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+
+//
+// Links
+//
+
+
+a, .link {
+  text-decoration: none;
+  color: $link-color;
+
+	&:hover {
+	  text-decoration: none;
+	  color: $link-color-hover;
+	}
+}
+
+
+//
+// this is for big tyle
+//
+
+
+.text-big {
+	font-size: 1.25em;
+	line-height: 1.4em;
+}
+
+
+//
+// this is for smaller type
+//
+
+.text-small {
+	font-size: .8em;
+	line-height: 1.5em;
+}
+
+
+//
+// this is for light text
+//
+
+.text-light {
+	color: lighten($text-color, 60%);
+}
+
+.entry-meta {
+	@extend .text-light;
+}
+
+
+//
+// Quotes
+//
+
+blockquote {
+	font-family: $font-headers;
+	font-size: 1.75em;
+	line-height: 1.35em;
+	border-left: 1px solid $web-grey;
+	margin-left: 40px;
+	padding-left: 20px;
+
+	p {
+		font-weight: 400;
+		margin: 0;
+	}
+}
+
+.quote-source {
+	font-size: .5em;
+	color: $web-grey-dark;
+	&:before {
+		content: '—';
+		padding-right: .25em;
+
+	}
+
+}
+
+//
+// Break
+//
+
+hr {
+	border: none;
+	border-bottom: 1px solid $web-grey;
+	margin: 1em 0;
+}
+
+//
+// Alignment
+//
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+.header {
+	font-size: 1.3em;
+	font-weight: 400;
+	line-height: 1em;
+	margin: 0 0 .5em;	
+	font-family: $font-headers;
+
+	&.big {
+		font-size: 2.75em;
+	}
+
+	&.small {
+		font-size: .95em;
+	}
+}
+
+// ==========================================================================
+// h1, h2, h3, etc.
+// ==========================================================================
+
+h3, h4, h5 {
+	font-family: $font-headers;
+	margin: 0 0 1em;
+	line-height: 1.35em;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1.1em;
+}
+
+h2 {
+	@extend .header;
+}
+
+
+
+
+

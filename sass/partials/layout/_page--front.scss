@@ -1,0 +1,7 @@
+// front page
+
+
+// hide all of the block titles on the front page in the main column
+.front #main > .block > h2 {
+	display: none;
+}

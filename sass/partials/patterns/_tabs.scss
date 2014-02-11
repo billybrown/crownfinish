@@ -1,0 +1,62 @@
+// tabs
+
+.tabs--nav {
+	margin: 0 0 -1px 0;
+	padding: 0;
+	@include clearfix;
+
+	li {
+		font-size: 1em;
+		margin: 0 .25em 0 0;
+		background: $web-grey-dark;
+		padding: .6em .6em .4em;
+		color: white;
+		display: block;
+		float: left;
+		border-top: 1px solid $web-grey-dark;
+		border-left: 1px solid $web-grey-dark;
+		border-right: 1px solid $web-grey-dark;
+		cursor: pointer;
+
+		&:hover {
+			background: $link-color;
+			color: white;
+		}
+		&.active {
+		background: white;
+		color: $web-black;
+		}
+	}
+
+	.no-js & li {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.tabs--content {
+	border: 1px solid $web-grey-dark;
+	padding: 1em;
+	.no-js & {
+		border: none;
+		padding: 0;
+	}
+
+}
+
+.tabs--pane {
+	display: none;
+
+	.no-js & {
+		display: block;
+		border: 1px solid $web-grey-dark;
+		padding: 1em;
+		margin-bottom: 1em;
+	}
+
+	&.active {
+		display: block;
+	}
+}

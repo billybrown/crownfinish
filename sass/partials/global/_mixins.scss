@@ -1,0 +1,58 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// BREAKPOINTS (media query stuff)
+
+// EXAMPLE USECASE
+//  .random-class {
+//     font-size: 1em;
+//     @include break-medium {
+//		  font-size: 2em;	
+//	   }
+//  }
+
+// more info about this method here: http://jakearchibald.github.io/sass-ie/
+///==================================================================================
+
+$fix-mqs: false !default;
+
+@mixin respond($width) {
+	// If were outputting for a fixed media query set...
+  @if $fix-mqs {
+    // ...and if we should apply these rules...
+    @if $fix-mqs >= $width {
+      // ...output the content the user gave us.
+      @content;
+  	}
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (min-width: $width) {
+      @content;
+  	}
+  }
+}
+
+// I also have a respond-max mixin, that does what you might expect
+$old-ie: false !default;
+@mixin old-ie {
+  // Only use this content if we're dealing with old IE
+  @if $old-ie {
+    @content;
+  }
+}
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// This is what keeps elements all inline and centered
+@mixin constrained {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}

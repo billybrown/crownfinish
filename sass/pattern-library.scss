@@ -1,0 +1,117 @@
+// directory styles
+@import 'partials/global/base';
+
+////////////////////////
+// Import Style Guide - reusable, modular css
+////////////////////////
+@import 'partials/patterns/patterns';
+
+
+body.logged-in {
+	margin-top: 30px;
+}
+.colorbox {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+.directory {
+	background: $background-color;
+}
+.directory-header {
+	@include respond($bp-medium) {
+ 	 	width: 200px;
+ 	 	position: fixed;
+ 	 	@include box-sizing(border-box);
+ 	 }
+}
+
+.directory-title {
+	padding: .5em .5em 0;
+}
+.directory-contents {
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+	position:relative;
+	a{
+		color: $link-color;
+		display: block;
+		border-bottom: 1px solid darken($background-color, 10%);
+		padding: .5em .75em;
+		&:hover {
+			background: $link-color;
+			color: white;
+		}
+	}
+}
+.directory-elements {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	@include respond($bp-medium) {
+ 	 	margin-left: 200px;
+ 	 }
+}
+
+.directory-element {
+	border-bottom: 1px solid #ddd;
+	padding: 1em 0;
+	background: white;
+	@include respond($bp-medium) {
+	 	padding: 0;
+	 	@include clearfix;
+    }
+
+	&.intro {
+		padding: 1em;
+		@include respond($bp-medium) {
+			padding: 2em;
+			display: block;
+		}
+	}
+
+}
+.directory-code,
+.directory-example
+ {
+ 	padding: 1em;
+ 	@include box-sizing(border-box);
+	@include respond($bp-medium) {
+ 	 	width: 50%;
+ 	 	float: left;
+ 	 }
+}
+
+.directory-code {
+	font-size: .75em;
+	line-height: 1.5em;
+	@include respond($bp-medium) {
+		padding: 1.25em;
+	}
+}
+.directory-example {
+	background: white;
+	clear: both;
+	overflow: hidden;
+	@include respond($bp-medium) {
+		clear: none;
+ 	 	padding: 1em;
+	}
+}
+
+.directory-code pre {
+	margin: 0;
+	padding: 1.45em;
+	padding-top: 0;
+}
+
+.directory-section-title {
+	background: #333;
+	padding: 1.08em;
+	text-align: center;
+	color: white;
+	margin: 0;
+}

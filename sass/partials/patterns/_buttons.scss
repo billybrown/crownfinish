@@ -1,0 +1,22 @@
+// button
+
+.button {
+  font-weight: 400;
+  border: none;
+  background: $link-color;
+  color: $web-white;
+  padding: 6.5px 14px;
+
+    &:hover {
+      background: $link-color-hover;
+    }
+
+    &.full {
+      display: block;
+      text-align: center;
+    }
+}
+
+a.button {
+	@extend .button;
+}

@@ -1,0 +1,20 @@
+////////////////////////
+// Style File
+//
+// This file gets turned into style.css. This file should really hold nothing except for imports of your base, style guide, layout, and design partials.
+////////////////////////
+
+////////////////////////
+// Base Import - variables and stuff, no actual code written here
+////////////////////////
+@import 'partials/global/base';
+
+////////////////////////
+// Import Style Guide - reusable, modular css
+////////////////////////
+@import 'partials/patterns/patterns';
+
+////////////////////////
+// Import Layout - stuff specific to layout and drupal things
+////////////////////////
+@import 'partials/layout/layout';

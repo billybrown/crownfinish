@@ -1,0 +1,31 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+### SASS ###
+### Sass Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache
+
+
+### Jekyll ###
+_site/
+
+
+### Grunt ###
+node_modules/
+
+
+### pre-optimized images ###
+images-pre/

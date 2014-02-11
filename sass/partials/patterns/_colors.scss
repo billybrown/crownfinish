@@ -1,0 +1,37 @@
+// colors
+
+
+// this is a mixin that pumps up classes for:
+// - text color
+// - background color
+// - button
+// - border
+//
+@mixin colorize($name, $color, $button-color) {
+	.color--#{$name} {
+		background: $color;
+	}
+	.type--#{$name} {
+		color: $color;
+	}
+	.border--#{$name} {
+		border: 1px solid $color;
+	}
+	.button {
+		&.#{$name} {
+			background: $color;
+			color: $button-color;
+	
+			&:hover {
+				background: lighten($color, 10%);
+			}
+		}
+	}
+}
+
+@include colorize(white, $web-white, $web-black);
+@include colorize(black, $web-black, white);
+@include colorize(grey, $web-grey, white);
+@include colorize(red, $red, white);
+@include colorize(blue, $blue, white);
+

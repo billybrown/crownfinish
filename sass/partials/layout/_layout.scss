@@ -1,0 +1,27 @@
+////////////////////////
+// Layouts Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All box model properties go here
+////////////////////////
+
+
+
+
+
+
+// modular
+@import 'offcanvas';
+@import 'page';
+@import 'header';
+@import 'footer';
+@import 'list--photos';
+
+// specific pages
+@import 'page--front';
+
+
+
+

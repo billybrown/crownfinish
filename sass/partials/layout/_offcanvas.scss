@@ -1,0 +1,57 @@
+
+// for the mobile nav
+
+#offcanvas--wrapper1 {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+ }
+
+#offcanvas--wrapper2 {
+    width: 100%;
+    position: relative;
+    @include transition(left .5s ease);
+
+  .js & {
+        left: 0;
+  }
+  
+  .js.js-nav & {
+        left: $nav-off-canvas-width;
+  }
+}
+
+// styles for the main menu
+// specific to off-canvas mobile nav functionality
+#offcanvas--items {
+  z-index: 200;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  
+  // .no-js on step 2?
+  &:not(:target) {
+    z-index: 1;
+    height: 0;
+  }
+
+  .js & {
+    height: 100%;
+    width: $nav-off-canvas-width;
+    left: (0 - $nav-off-canvas-width);
+
+    @include respond($bp-medium) {
+      height: auto;
+      width: auto;
+      left: auto;
+    }
+  }
+
+  @include respond($bp-medium) {
+    position: static;
+    margin: 0;
+    padding: 0;
+  }
+}

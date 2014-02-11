@@ -1,0 +1,68 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+
+// Fonts
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+
+$courier:           	"Courier New", "DejaVu Sans Mono", monospace, sans-serif; 
+$helvetica:         	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$lora:					'Lora', serif;
+
+$base-font-family:		$lora;
+$font-headers:			$lora;
+$font-monospace:		$courier;
+
+// Colors
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+
+// brand colors
+$red:  					#d7272b;
+$blue:	 				#24407a;
+
+
+// standard colors 
+$web-black:				#333333;
+$web-white:    			#ffffff;
+$web-grey:     			#eeeeee;
+$web-grey-dark:			#cccccc;
+
+// standard uses
+$text-color:           	$web-black;
+$background-color: 	   	$web-white;
+$footer-color:			$web-black;
+
+// links
+$link-color:      		$red;
+$link-color-hover:		lighten($red, 10%);
+
+// alerts, warnings, etc.
+$alert-danger:    		#a94442;
+$alert-info:      		#31708f;
+$alert-warning:   		#8a6d3b;
+$alert-success:   		#3c763d;
+
+
+// Misc. Variables
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+
+$min-width:				20em;
+$max-width:				55em;
+$nav-off-canvas-width:	70%;
+$font-size:				1em;
+$line-height:			1.4em;
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// BREAKPOINTS (media query stuff)
+
+$bp-small:  			30em;
+$bp-medium: 			45em;
+$bp-large:  			$max-width;
+
+
+
+

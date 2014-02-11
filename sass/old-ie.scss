@@ -1,0 +1,7 @@
+// thermometer ie
+@import 'partials/global/base';
+$old-ie: true;
+$fix-mqs: $bp-medium;
+@import 'style';
+
+// put your individual fixes here

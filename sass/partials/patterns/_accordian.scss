@@ -1,0 +1,21 @@
+// accordian
+
+.accordian {
+	margin-bottom: 1em;
+}
+.accordian-content {
+	display: none;
+
+	.no-js & {
+		display: block;
+	}
+}
+
+.accordian-title {
+	cursor: pointer;
+	color: $link-color;
+
+	&:hover {
+		color: $link-color-hover;
+	}
+}
