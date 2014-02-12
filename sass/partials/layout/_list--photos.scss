@@ -1,6 +1,6 @@
 // photo list
 
-$slides_amount: 11;
+$slides_amount: 8;
 $slides_width: 650px;
 $slides_height: 550px;
 $slider_width: $slides_width * $slides_amount;
@@ -32,11 +32,14 @@ $slider_width: $slides_width * $slides_amount;
 	.gear {
 		display: none;
 		@include respond($bp-medium) {
+			position: absolute;
+			z-index: 100;
 			display: block;
 			background: $red;
 			padding: 1em;
 			color: white;
 			font-weight: 600;
+			width: 70px;
 	
 			&:hover {
 				background: $blue;
@@ -44,10 +47,11 @@ $slider_width: $slides_width * $slides_amount;
 			}
 	
 			&.next {
-				float: right;
+				right: 0
 			}
 			&.prev {
-				float: left;
+				left: 0;
+
 			}
 			&.greyed {
 				background: $web-grey-dark;

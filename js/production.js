@@ -60,7 +60,7 @@ var breakpoints = {
 var picrow = {
 	onReady: function($button_next, $button_prev, $slider, $slides) {
 		var slides ={
-			amount: 10,
+			amount: 7,
 			width: 650,
 			height: 500,
 		};

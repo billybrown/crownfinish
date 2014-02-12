@@ -7,7 +7,7 @@ p, li {
 	font-size: $font-size;
 	line-height: $line-height;
 	@include respond($bp-medium) {
-		font-size: 2em;
+		font-size: 1.25em;
 	}
 }
 
@@ -38,7 +38,7 @@ a, .link {
 
 
 .text-big {
-	font-size: 1.25em;
+	font-size: 2em;
 	line-height: 1.4em;
 }
 

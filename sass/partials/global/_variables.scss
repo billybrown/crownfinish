@@ -10,10 +10,12 @@
 
 $courier:           	"Courier New", "DejaVu Sans Mono", monospace, sans-serif; 
 $helvetica:         	"Helvetica Neue", Helvetica, Arial, sans-serif;
-$lora:					'Lora', serif;
+$petita-light:          'petita-light';
+$petita-regular:        'petita-regular';
 
-$base-font-family:		$lora;
-$font-headers:			$lora;
+
+$base-font-family:		$petita-light, $helvetica;
+$font-headers:			$petita-regular, $helvetica;
 $font-monospace:		$courier;
 
 // Colors
